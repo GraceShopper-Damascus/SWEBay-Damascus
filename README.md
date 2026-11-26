@@ -1,44 +1,125 @@
-# FS-App-Template
+# SWEbay — Full-Stack E-Commerce Platform
 
-## Setup
+## Overview
 
-To use this as boilerplate, you'll need to take the following steps:
+SWEbay is a full-stack e-commerce application developed collaboratively during Fullstack Academy's Software Engineering program in July 2023.
 
-- Don't fork or clone this repo! Instead, create a new, empty
-  directory on your machine and `git init` (or create an empty repo on
-  Github and clone it to your local machine)
+The project explores online shopping functionality, relational database design, user authentication, shopping cart management, and full-stack application development.
 
-- Now you will have to add the fs-app-template as a remote and merge it into your own repository.
+## Project Information
 
-```
-git remote add boilermaker git@github.com:FullstackAcademy/fs-app-template-v2.git
-git fetch boilermaker
-git merge boilermaker/main
-git branch -m master main
-```
+- **Project type:** Collaborative educational project
+- **Developed:** July 2023
+- **Program:** Fullstack Academy
+- **Status:** Historical educational project
+- **License:** MIT
 
-## Customize
+## Features
 
-Now that you've got the code, follow these steps to get acclimated:
+- Product catalog
+- Individual product pages
+- User registration and authentication
+- Shopping cart management
+- Relational database models
+- Database seeding with generated test data
+- Client-server communication through REST APIs
 
-- Update project name and description in `package.json`
-- `npm install`
-- Create two postgres databases (`MY_APP_NAME` should match the `name`
-  parameter in `package.json`):
-- These commands will create both your **development** and **test** databases
+## Technology Stack
 
-```
-createdb <YOUR APP NAME HERE FROM package.json>
-createdb <YOUR APP NAME HERE FROM package.json>-test
-```
+### Frontend
 
-- By default, running `npm test` will use your test database, while
-  regular development uses development database
+- JavaScript
+- React
+- Redux Toolkit
+- React Router
+- HTML and CSS
+- Axios
+- Webpack
 
-## Start
+### Backend
 
-Sync and seed your database by running `npm run seed`. Running `npm run start:dev` will make great things happen!
+- Node.js
+- Express
+- PostgreSQL
+- Sequelize
+- JSON Web Tokens
+- bcrypt
 
-- start:dev will both start your server and build your client side files using webpack
-- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
-- start:dev:seed will start your server and also seed your database (this is useful when you are making schema changes and you don't want to run your seed script separately)
+### Testing and Development Tools
+
+- Mocha
+- Chai
+- Supertest
+- Faker
+- Nodemon
+- Git and GitHub
+- npm
+
+## Development Experience
+
+This project provided the development team with practical experience in:
+
+- Collaborative software development
+- Relational database design
+- Database associations and join tables
+- REST API development
+- User authentication
+- Application state management
+- Database seeding
+- Application testing and debugging
+- Git branching and pull requests
+
+## Project Structure
+
+- `client/` — Frontend components, routing, and state management
+- `server/` — Backend application, API routes, authentication, and database models
+- `script/` — Database seeding utilities
+
+## Development Commands
+
+The original project includes the following development scripts:
+
+| Command | Purpose |
+| --- | --- |
+| `npm install` | Install project dependencies |
+| `npm run seed` | Seed the development database |
+| `npm run start:dev` | Start the development server and client build |
+| `npm run start:dev:logger` | Start development with SQL query logging |
+| `npm run start:dev:seed` | Seed the database and start development |
+| `npm run build` | Build frontend assets |
+| `npm test` | Run the configured test suite |
+| `npm run test:dev` | Run tests in watch mode |
+
+The application requires PostgreSQL and appropriate database and environment configuration.
+
+Review the database configuration before running seed scripts, as these may reset existing data.
+
+These commands are retained from the original project configuration and have not been verified in a modern development environment.
+
+## Project Status
+
+This repository is preserved as an example of collaborative software engineering experience from 2023.
+
+The application may require dependency updates and configuration changes before it can run in a modern development environment.
+
+Current application functionality and test results have not been verified.
+
+## Potential Future Improvements
+
+- Update application dependencies.
+- Migrate JavaScript components to TypeScript.
+- Expand automated test coverage.
+- Improve application accessibility.
+- Improve error handling and validation.
+- Document environment configuration.
+- Implement continuous integration.
+
+## Contributors
+
+This project was developed collaboratively by members of the GraceShopper-Damascus team during Fullstack Academy.
+
+[View project contributors](https://github.com/GraceShopper-Damascus/SWEBay-Damascus/graphs/contributors)
+
+## Acknowledgments
+
+The application was originally initialized using Fullstack Academy's FS-App-Template boilerplate.
